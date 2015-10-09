@@ -23,7 +23,12 @@ public class Homework6 {
 		* Round 3
 		* Tell them it was correct
 		* Give them points
-		* Make the next question harder	 	
+		* Make the next question harder
+		* 
+		* Round 4	
+		* Tell them it was correct
+		* Give them points
+		* Make the next question harder 	
 		*/
 
 	}
