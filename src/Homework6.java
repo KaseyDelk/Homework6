@@ -27,7 +27,7 @@ public class Homework6 {
 		* 	If not correct
 		* 	Tell them the correct answer
 		* 	& do not give them points
-		* 	Make next question easi
+		* 	Make next question easier
 		*  
 		* Round 3
 		* Generate 2 random numbers
@@ -41,7 +41,7 @@ public class Homework6 {
 		* 	If not correct
 		* 	Tell them the correct answer
 		* 	& do not give them points
-		* 	Make next question easi
+		* 	Make next question easier
 		* 
 		* Round 4	
 		*  Generate 2 random numbers
@@ -55,7 +55,7 @@ public class Homework6 {
 		* 	If not correct
 		* 	Tell them the correct answer
 		* 	& do not give them points
-		* 	Make next question easi	
+		* 	Make next question easier	
 		*/
 
 	}
