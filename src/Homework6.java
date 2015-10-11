@@ -23,21 +23,22 @@ public class Homework6 {
 		    //Check if the answer was correct
 			//If correct
 			if (userAnswer == correctAnswer){
-				System.out.println("Answer was correct.");
+				System.out.println("Answer was correct. You received 10 points.");
 			}else{
-				System.out.println("Answer is incorrect.");
+				System.out.println("Answer is incorrect. You received 0 points. ");
 			}
 		
-			/* 
-			* 	Tell them it was correct
+			 
+			/* 	Tell them it was correct
 		 	* 	& give them points
 			* Make the next question harder
 			* 	If not correct
 			* 	Tell them the correct answer
 			* 	& do not give them points
 			* 	Make next question easier
-			* 
-			* Round 2
+			*/
+			
+			/* Round 2
 			* Generate 2 random numbers
 			* Ask the user to add these two numbers together
 			* Read their response 
@@ -50,7 +51,7 @@ public class Homework6 {
 			* 	Tell them the correct answer
 			* 	& do not give them points
 			* 	Make next question easier
-			*  
+			* 
 			* Round 3
 			* Generate 2 random numbers
 			* Ask the user to add these two numbers together
