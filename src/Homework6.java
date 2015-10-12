@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Homework6 {
 	public static void main(String[] args) {
 
-		   	//This is my development branch
+		   	//This is the development branch
 			//Round 1
 		
 			//Generate 2 random numbers
@@ -18,7 +18,6 @@ public class Homework6 {
 			//Read their response 
 			Scanner input = new Scanner(System.in);
 			int userAnswer = input.nextInt();
-			
 		 
 		    //Check if the answer was correct
 			//If correct
@@ -27,7 +26,6 @@ public class Homework6 {
 			}else{
 				System.out.println("Answer is incorrect. You received 0 points. ");
 			}
-		
 			 
 			/* 	Tell them it was correct
 		 	* 	& give them points
