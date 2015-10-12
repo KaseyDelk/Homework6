@@ -6,19 +6,20 @@ public class Homework6 {
 			//Round 1
 		
 			//Generate 2 random numbers
-			int number1 = (int) (Math.random () * 10);
-			System.out.println("Number is " + number1);
+			int number1round1 = (int) (Math.random () * 10);
+			System.out.println("Number is " + number1round1);
 			
-			int number2 = (int) (Math.random () * 10);
-			System.out.println("Number is " + number2);
-			int correctAnswer = number1 + number2;
+			int number2round1 = (int) (Math.random () * 10);
+			System.out.println("Number is " + number2round1);
+			int correctAnswer = number1round1 + number2round1;
+			
 			//Ask the user to add these two numbers together
-			System.out.println("What is " + number1 + " + " + number2 + "?");
+			System.out.println("What is " + number1round1 + " + " + number2round1 + "?");
 			 
 			//Read their response 
 			Scanner input = new Scanner(System.in);
 			int userAnswer = input.nextInt();
-		 
+
 		    //Check if the answer was correct
 			//If correct
 			if (userAnswer == correctAnswer){
