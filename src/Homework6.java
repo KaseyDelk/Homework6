@@ -25,15 +25,15 @@ public class Homework6 {
 				System.out.println("Answer was correct.");
 				hardnessofquestion *= 10;
 				System.out.println("Score is: " + hardnessofquestion);
+				int hardnessofquestion1 = 100;
 			}else{
 				System.out.println("Answer is incorrect.");
 				System.out.println("You recieved no points.");
 				System.out.println("Answer was " + correctAnswer1);
+				int hardnessofquestion1 = 10;
 			}
 			
 			//Round 2
-			int hardnessofquestion2 = 100;
-			
 			//Generate 2 random numbers
 			int number1round2 = (int) (Math.random () * hardnessofquestion);
 			int number2round2 = (int) (Math.random () * hardnessofquestion);
@@ -50,16 +50,15 @@ public class Homework6 {
 				System.out.println("Answer was correct.");
 				hardnessofquestion *= 10;
 				System.out.println("Score is: " + hardnessofquestion);
+				int hardnessofquestion2 = 1000;
 			}else{
 				System.out.println("Answer is incorrect.");
 				System.out.println("You recieved no points.");
 				System.out.println("Answer was " + correctAnswer2);
+				int hardnessofquestion2 = 100;
 			}
 			
 			//Round 3
-			int hardnessofquestion3 = 1000;
-			
-			//Round 1
 			//Generate 2 random numbers
 			int number1round3 = (int) (Math.random () * hardnessofquestion);
 			int number2round3 = (int) (Math.random () * hardnessofquestion);
@@ -76,14 +75,14 @@ public class Homework6 {
 				System.out.println("Answer was correct.");
 				hardnessofquestion *= 10;
 				System.out.println("Score is: " + hardnessofquestion);
+				int hardnessofquestion3 = 10000;
 			}else{
 				System.out.println("Answer is incorrect.");
 				System.out.println("You recieved no points.");
 				System.out.println("Answer was " + correctAnswer3);
+				int hardnessofquestion3 = 1000;
 			}
-			//Round 4
-			int hardnessofquestion4 = 1000;
-			
+			//Round 4			
 			//Generate 2 random numbers
 			int number1round4 = (int) (Math.random () * hardnessofquestion);
 			int number2round4 = (int) (Math.random () * hardnessofquestion);
@@ -100,10 +99,12 @@ public class Homework6 {
 				System.out.println("Answer was correct.");
 				hardnessofquestion *= 10;
 				System.out.println("Score is: " + hardnessofquestion);
+				int hardnessofquestion4 = 100000;
 			}else{
 				System.out.println("Answer is incorrect.");
 				System.out.println("You recieved no points.");
 				System.out.println("Answer was " + correctAnswer4);
+				int hardnessofquestion4 = 10000;
 			}
 	}
 }
