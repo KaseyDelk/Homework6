@@ -38,6 +38,7 @@ public class Homework6 {
 			*/
 			
 			// Round 2
+			
 			//Generate 2 random numbers
 			int number1round2 = (int) (Math.random () * 10);
 			System.out.println("Number is " + number1round2);
@@ -70,6 +71,7 @@ public class Homework6 {
 			*/ 
 			
 			//Round 3
+			
 			//Generate 2 random numbers
 			int number1round3 = (int) (Math.random () * 10);
 			System.out.println("Number is " + number1round3);
@@ -102,6 +104,7 @@ public class Homework6 {
 			*/
 			
 			// Round 4	
+			
 			//Generate 2 random numbers
 			int number1round4 = (int) (Math.random () * 10);
 			System.out.println("Number is " + number1round4);
