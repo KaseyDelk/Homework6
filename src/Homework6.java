@@ -5,106 +5,194 @@ public class Homework6 {
 		   	//This is the development branch
 			
 			int score = 0;
-			int hardnessofquestion = 10;
+			int hardnessOfQuestion = 10;
 			
-			//Round 1
-			//Generate 2 random numbers
-			int number1round1 = (int) (Math.random () * hardnessofquestion);
-			int number2round1 = (int) (Math.random () * hardnessofquestion);
-			int correctAnswer1 = number1round1 + number2round1;
+			// Round 1
+			//	Generate 2 random numbers
+			int number1 = (int)(Math.random() * hardnessOfQuestion);
+			/* No longer needed debug statement
+			 * System.out.println("Number1 is :" + number1 );
+			 */
 			
-			//Ask the user to add these two numbers together
-			System.out.println("What is " + number1round1 + " + " + number2round1 + "?");
-			 
-			//Read their response 
+			int number2 = (int)(Math.random() * hardnessOfQuestion);
+			/* No longer needed debug statement
+			 * System.out.println("Number2 is :" + number2 );
+			 */
+			
+			// to keep track of the correct answer.
+			int correctAnswer = number1 + number2;
+			
+			//  Ask the user to add these two numbers together
+			System.out.println
+			("What integer is " + number1 + " + " + number2 + "?");
+			System.out.println("Please answer in integers only.");
+			
+			//  Read in their response
 			Scanner input = new Scanner(System.in);
-			int userAnswer1 = input.nextInt();
-
-		    //Check if the answer was correct
-			if (userAnswer1 == correctAnswer1){
-				System.out.println("Answer was correct.");
-				hardnessofquestion *= 10;
-				System.out.println("Score is: " + hardnessofquestion);
-				int hardnessofquestion1 = 100;
-			}else{
-				System.out.println("Answer is incorrect.");
-				System.out.println("You recieved no points.");
-				System.out.println("Answer was " + correctAnswer1);
-				int hardnessofquestion1 = 10;
+			int studentAnswer = input.nextInt();
+			//  Check if the answer was correct
+			//		IF correct
+			if (studentAnswer == correctAnswer){
+				//			Tell them it was correct
+				System.out.println("Answer was correct");
+				//			Give them points
+				score += hardnessOfQuestion;
+				System.out.println("Score is: " + score);
+				//			Make the next question harder
+				hardnessOfQuestion *= 10;	
+				System.out.println("hardness is: " + hardnessOfQuestion);
 			}
-			
-			//Round 2
-			//Generate 2 random numbers
-			int number1round2 = (int) (Math.random () * hardnessofquestion);
-			int number2round2 = (int) (Math.random () * hardnessofquestion);
-			int correctAnswer2 = number1round2 + number2round2;
-			
-			//Ask the user to add these two numbers together
-			System.out.println("What is " + number1round2 + " + " + number2round2 + "?");
-			 
-			//Read their response 
-			int userAnswer2 = input.nextInt();
-
-		    //Check if the answer was correct
-			if (userAnswer2 == correctAnswer2){
-				System.out.println("Answer was correct.");
-				hardnessofquestion *= 10;
-				System.out.println("Score is: " + hardnessofquestion);
-				int hardnessofquestion2 = 1000;
-			}else{
-				System.out.println("Answer is incorrect.");
-				System.out.println("You recieved no points.");
-				System.out.println("Answer was " + correctAnswer2);
-				int hardnessofquestion2 = 100;
+			//		IF not correct
+			else{
+				//			Tell them it was wrong
+				System.out.println("Answer was not correct");
+				// 			Tell them the correct answer
+				System.out.println("The correct answer was: " + correctAnswer);
+				//			Do not give them points
+				score += 0;
+				//			Make the next question easier
+				if(hardnessOfQuestion>10){
+					hardnessOfQuestion /= 10;	
+					/* This line of code would do the same thing
+					 * as hardnessOfQuestion /= 10;.
+					 * hardnessOfQuestion = hardnessOfQuestion / 10;
+					 */
+				}
 			}
+			System.out.println("End of round 1");
+			// end of round 1
 			
-			//Round 3
-			//Generate 2 random numbers
-			int number1round3 = (int) (Math.random () * hardnessofquestion);
-			int number2round3 = (int) (Math.random () * hardnessofquestion);
-			int correctAnswer3 = number1round3 + number2round3;
-			
-			//Ask the user to add these two numbers together
-			System.out.println("What is " + number1round3 + " + " + number2round3 + "?");
-			 
-			//Read their response 
-			int userAnswer3 = input.nextInt();
+			// Round 2 (note: additional comments in round 1)
+			//	Generate 2 random numbers
+			number1 = (int)(Math.random() * hardnessOfQuestion);
+			number2 = (int)(Math.random() * hardnessOfQuestion);
 
-		    //Check if the answer was correct and award points if necessary 
-			if (userAnswer3 == correctAnswer3){
-				System.out.println("Answer was correct.");
-				hardnessofquestion *= 10;
-				System.out.println("Score is: " + hardnessofquestion);
-				int hardnessofquestion3 = 10000;
-			}else{
-				System.out.println("Answer is incorrect.");
-				System.out.println("You recieved no points.");
-				System.out.println("Answer was " + correctAnswer3);
-				int hardnessofquestion3 = 1000;
-			}
-			//Round 4			
-			//Generate 2 random numbers
-			int number1round4 = (int) (Math.random () * hardnessofquestion);
-			int number2round4 = (int) (Math.random () * hardnessofquestion);
-			int correctAnswer4 = number1round4 + number2round4;
 			
-			//Ask the user to add these two numbers together
-			System.out.println("What is " + number1round4 + " + " + number2round4 + "?");
-			 
-			//Read their response 
-			int userAnswer4 = input.nextInt();
-
-		    //Check if the answer was correct
-			if (userAnswer4 == correctAnswer4){
-				System.out.println("Answer was correct.");
-				hardnessofquestion *= 10;
-				System.out.println("Score is: " + hardnessofquestion);
-				int hardnessofquestion4 = 100000;
-			}else{
-				System.out.println("Answer is incorrect.");
-				System.out.println("You recieved no points.");
-				System.out.println("Answer was " + correctAnswer4);
-				int hardnessofquestion4 = 10000;
+			// to keep track of the correct answer.
+			correctAnswer = number1 + number2;
+			
+			//  Ask the user to add these two numbers together
+			System.out.println
+			("What integer is " + number1 + " + " + number2 + "?");
+			System.out.println("Please answer in integers only.");
+			
+			//  Read in their response
+			//Scanner input = new Scanner(System.in);
+			studentAnswer = input.nextInt();
+			//  Check if the answer was correct
+			//		IF correct
+			if (studentAnswer == correctAnswer){
+				//			Tell them it was correct
+				System.out.println("Answer was correct");
+				//			Give them points
+				score += hardnessOfQuestion;
+				System.out.println("Score is: " + score);
+				//			Make the next question harder
+				hardnessOfQuestion *= 10;	
+				System.out.println("hardness is: " + hardnessOfQuestion);
 			}
+			//		IF not correct
+			else{
+				//			Tell them it was wrong
+				System.out.println("Answer was not correct");
+				// 			Tell them the correct answer
+				System.out.println("The correct answer was: " + correctAnswer);
+				//			Do not give them points
+				score += 0;
+				//			Make the next question easier
+				if(hardnessOfQuestion>10){
+					hardnessOfQuestion /= 10;	
+				}
+			}
+			// end of round 2
+			System.out.println("End of round 2");
+			// Round 3 (note: additional comments in round 1)
+			//	Generate 2 random numbers
+			number1 = (int)(Math.random() * hardnessOfQuestion);
+			number2 = (int)(Math.random() * hardnessOfQuestion);
+
+			
+			// to keep track of the correct answer.
+			correctAnswer = number1 + number2;
+			
+			//  Ask the user to add these two numbers together
+			System.out.println
+			("What integer is " + number1 + " + " + number2 + "?");
+			System.out.println("Please answer in integers only.");
+			
+			//  Read in their response
+			//Scanner input = new Scanner(System.in);
+			studentAnswer = input.nextInt();
+			//  Check if the answer was correct
+			//		IF correct
+			if (studentAnswer == correctAnswer){
+				//			Tell them it was correct
+				System.out.println("Answer was correct");
+				//			Give them points
+				score += hardnessOfQuestion;
+				System.out.println("Score is: " + score);
+				//			Make the next question harder
+				hardnessOfQuestion *= 10;	
+				System.out.println("hardness is: " + hardnessOfQuestion);
+			}
+			//		IF not correct
+			else{
+				//			Tell them it was wrong
+				System.out.println("Answer was not correct");
+				// 			Tell them the correct answer
+				System.out.println("The correct answer was: " + correctAnswer);
+				//			Do not give them points
+				score += 0;
+				//			Make the next question easier
+				if(hardnessOfQuestion>10){
+					hardnessOfQuestion /= 10;	
+				}
+			}
+			// end of round 3
+			System.out.println("End of round 3");
+			// Round 4 (note: additional comments in round 1)
+			//	Generate 2 random numbers
+			number1 = (int)(Math.random() * hardnessOfQuestion);
+			number2 = (int)(Math.random() * hardnessOfQuestion);
+
+			
+			// to keep track of the correct answer.
+			correctAnswer = number1 + number2;
+			
+			//  Ask the user to add these two numbers together
+			System.out.println
+			("What integer is " + number1 + " + " + number2 + "?");
+			System.out.println("Please answer in integers only.");
+			
+			//  Read in their response
+			//Scanner input = new Scanner(System.in);
+			studentAnswer = input.nextInt();
+			//  Check if the answer was correct
+			//		IF correct
+			if (studentAnswer == correctAnswer){
+				//			Tell them it was correct
+				System.out.println("Answer was correct");
+				//			Give them points
+				score += hardnessOfQuestion;
+				System.out.println("Score is: " + score);
+				//			Make the next question harder
+				hardnessOfQuestion *= 10;	
+				System.out.println("hardness is: " + hardnessOfQuestion);
+			}
+			//		IF not correct
+			else{
+				//			Tell them it was wrong
+				System.out.println("Answer was not correct");
+				// 			Tell them the correct answer
+				System.out.println("The correct answer was: " + correctAnswer);
+				//			Do not give them points
+				score += 0;
+				//			Make the next question easier
+				if(hardnessOfQuestion>10){
+					hardnessOfQuestion /= 10;	
+				}
+			}
+			// end of round 4
+			System.out.println("End of round 4 and the end of the game");
+		}
 	}
-}
